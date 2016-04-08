@@ -1,0 +1,13 @@
+{%extends 'base.html'%}
+{% block content %}
+
+    <h1>Comunicate con Nosotros</h1>
+    <h2>Te enviaremos las ultimas noticias y eventos</h2>
+
+    <form role="form" action="" method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Enviar</button>
+    </form>
+
+{% endblock %}

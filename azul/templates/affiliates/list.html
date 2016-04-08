@@ -1,0 +1,22 @@
+{%extends 'base.html'%}
+{% block content %}
+
+
+    <h1>Instituciones</h1>
+
+    {% for value in foundations %}
+        <p>{{ value.name }}</p>
+        <img src="{{ value.image.url }}" >
+    {% endfor %}
+
+
+    {% for value in contributors %}
+        <p>{{ value.name }}</p>
+    {% endfor %}
+
+
+     {% for value in vowels %}
+        <p>{{ value.name }}</p>
+    {% endfor %}
+
+{% endblock %}

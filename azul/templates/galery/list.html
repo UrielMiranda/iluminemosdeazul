@@ -1,0 +1,14 @@
+{%extends 'base.html'%}
+{% block content %}
+
+    <h1> Galery </h1>
+    <ul>
+        {% for value in object_list %}
+            <li>{{ value.name_institution }}</li>
+        {% empty %}
+            <li>No articles yet.</li>
+        {% endfor %}
+    </ul>
+
+
+{% endblock %}

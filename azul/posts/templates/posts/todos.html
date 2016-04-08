@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+{%extends 'base.html'%}
+{%load static%}
+
+{%block content%}
+	<h1>Todos los posts:</h1>
+
+	{% for post in posts %}
+	<a href="{{post.get_absolute_url}}">
+		<h2>{{post.titulo}}</h2>
+	</a>
+
+		<p>{{post.fecha}}</p>
+		<p>{{post.cuerpo}}</p>
+	{%endfor%}
+
+	
+
+{%endblock content%}

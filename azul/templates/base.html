@@ -1,0 +1,76 @@
+{% load staticfiles %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Iluminemos de Azul</title>
+  <!-- <link rel="stylesheet" href="css/style.css"> -->
+  <link rel="stylesheet" href="{% static 'bootstrap/css/bootstrap.css' %}">
+  <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+  <link rel="stylesheet" href="{% static 'css/style.css' %}" rel="stylesheet">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+</head>
+<body>
+    <header>
+      <img class="img-responsive" src="../media/images/header-sitio-ida.png" alt="">
+    </header>
+    <div class="container navmenu">
+      <div class="col-md-10  col-lg-10 col-sm-12 col-xs-12 col-md-offset-1 col-lg-offset-1 ">
+        <nav class="navbar navbar-default" role="navigation">
+          <!-- El logotipo y el icono que despliega el menú se agrupan
+               para mostrarlos mejor en los dispositivos móviles -->
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+              <span class="sr-only">Desplegar navegación</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+          </div>
+
+
+          <!-- Agrupar los enlaces de navegación, los formularios y cualquier
+               otro elemento que se pueda ocultar al minimizar la barra -->
+          <div class="collapse navbar-collapse navbar-ex1-collapse navblue">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="#">Cónocenos</a></li>
+              <li><a href="#">Hablemos de autismo</a></li>
+              <li><a href="#">Instituciones</a></li>
+              <li><a href="#">Actividades</a></li>
+              <li><a href="#">¿Cómo Apoyar?</a></li>
+              <li class="visible-lg"><a href="http://www.facebook.com"><i class="fa fa-facebook-square fa-2x"></i></a></li>
+              <li class="visible-lg"><a href="http://www.twitter.com"><i class="fa fa-twitter-square fa-2x"></i></a></li>
+              <li class="visible-lg"><a href="http://www.instagram.com/iluminemosdeazul/"><i class="fa fa-instagram fa-2x"></i></a></li>
+
+            </ul>
+          </div>
+        </nav>
+      </div>
+    </div>
+
+    {% block content %}
+    {% endblock %}
+
+    <footer class="footer">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10 col-xs-10 col-sm-10 col-lg-10 col-md-offset-1 col-sm-offset-1">
+                <ul>
+                  <!-- <li><img class="img-responsive pull-left" src="images/logo.png" alt=""></li> -->
+                  <li class="pull-right"><a href="#">Cónocenos</a></li>
+                  <li class="pull-right"><a href="#">Hablemos de autismo</a></li>
+                  <li class="pull-right"><a href="#">Instituciones</a></li>
+                  <li class="pull-right"><a href="#">Actividades</a></li>
+                  <li class="pull-right"><a href="#">¿Cómo Apoyar?</a></li>
+                  <li class="pull-right"><a href="#">Contáctanos</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </footer>
+
+  <script src="http://code.jquery.com/jquery-2.2.2.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</body>
+</html>
