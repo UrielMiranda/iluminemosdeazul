@@ -4,21 +4,14 @@
 
     <section id="affiliates">
         <div class="container">
-
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
-
-
                 <div class="title">
                     <h1 class="text-uppercase">Instituciones</h1>
                 </div>
-                 </div>
-             </div>
+            </div>
 
-             <div class="row">
                 <div class="col-md-10 col-md-offset-1">
-
-
                     <div class="title">
                         <h2 class="text-uppercase">FUNDACIONES</h2>
                     </div>
@@ -28,27 +21,20 @@
 
 
                  {% for value in foundations %}
-                   <a href="{{ value.link }}" target="_blank">
-                      <img src="{{ value.image.url }}" class="pull-left" >
-                   </a>
 
+                 <div class="col-md-4 col-sm-4 col-xs-12 col-lg-4">
+                   <a href="{{ value.link }}" target="_blank">
+                      <img class="center-block img-responsive" src="{{ value.image.url }}" class="pull-left" >
+                   </a>
+                  </div>
                 {% endfor %}
 
                 </div>
              </div>
 
 
-
-
-
-
-
-
-
-
-
              <div class="row">
-                <div class="col-md-10 col-md-offset-1">
+                <div class="col-md-10  col-md-offset-1">
 
                     <div class="title">
                         <h2 class="text-uppercase">COLABORADORES</h2>
@@ -56,9 +42,11 @@
                     <p>Y tan extraordinaria labor, sería imposible realizarla sin el apoyo de muchas empresas y emprendedores con los que hoy, somos afortunados de contar aliados que trabajan todos los días para apoyarnos a cumplir nuestra meta, por eso te los presentamos o si quieres formar parte de ellos, llena el formulario que está abajo y haznos llegar tu información:</p>
 
                      {% for value in contributors %}
+                     <div class="col-md-4 col-sm-4 col-xs-12 col-lg-4">
                        <a href="{{ value.link }}" target="_blank">
-                          <img src="{{ value.image.url }}" class="pull-left" >
+                          <img class="center-block img-responsive" src="{{ value.image.url }}" class="pull-left" >
                        </a>
+                     </div>
                     {% endfor %}
 
                 </div>
