@@ -180,7 +180,9 @@ p{
   padding: 20px;
   vertical-align: middle;
 }
-
+.embed-responsive-item{
+  margin-top: 25px; 
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) { }
 
