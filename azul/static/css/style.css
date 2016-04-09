@@ -23,7 +23,10 @@ header img{
 #gallery > img{
   width: 100%;
 }
-
+#banners img{
+   box-shadow: 2px 2px 5px #999;
+   margin: 10px;
+}
 /***********  Clases ************/
 .footer{
   backgorund:url(images/footer-01.sgv) center center no-repeat;
@@ -138,9 +141,38 @@ header img{
 }
 .no-padding{
   padding: 0px!important;
-
 }
-
+.contact-head h1{
+  background-color: #005FB5;
+  color:#fff;
+  padding: 20px;
+  text-align: left;
+  border-radius: 20px;
+}
+.contact-head-map h3,
+.contact-head-map h1{
+  background-color: #1694d3;
+  color:#fff;
+  padding: 15px;
+  border-radius: 20px;
+}
+/*.form-blue{
+  border-color:#1694d3;
+}*/
+.contacto{
+  padding: 20px;
+}
+.contacto p,
+.address p{
+  color:#1694d3 ;
+}
+.address h4{
+  color:#1694d3;
+}
+.address{
+  padding: 20px;
+  vertical-align: middle;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) { ... }
