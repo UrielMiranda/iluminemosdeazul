@@ -1,15 +1,26 @@
 from django.shortcuts import render, redirect
 from django.views.generic import View
 from .forms import ContactForm
+<<<<<<< HEAD
 from django.core.mail import EmailMessage
 # Create your views here.
 
+=======
+from django.core.mail import EmailMultiAlternatives
+from django.template.loader import get_template
+from django.template import Context
+
+# Create your views here.
+
+from django.core.mail import EmailMessage
+
+>>>>>>> ac629cab34617b86d75969935ccca89fb8c5c131
 
 
 class Contacto(View):
 	def get(self,request):
 		form=ContactForm()
-		return render(request, 'contacto/contacto.html', 
+		return render(request, 'contacto/contacto.html',
 			{
 			'form': form,
 			})
@@ -24,8 +35,8 @@ class Contacto(View):
 		Hay alguien interesado en Iluminemos de Azul
 
 		Nombre: %s
-		Mail:  %s 
-		Mensaje: %s"""	% (nombre_contacto, mail_contacto, contenido) 
+		Mail:  %s
+		Mensaje: %s"""	% (nombre_contacto, mail_contacto, contenido)
 		email = EmailMessage('Alguien quiere contactarnos', content,
 			mail_contacto, ['iluminemosazul@gmail.com'], reply_to= [mail_contacto],
 			headers={'Mensaje': 'foo'} )
@@ -35,17 +46,8 @@ class Contacto(View):
 		except:
 			print('Error')
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> ac629cab34617b86d75969935ccca89fb8c5c131
 		return redirect('contacto:contactoapp')
-
-		
-	
-
-
-
-
-
-
-
-
-	
