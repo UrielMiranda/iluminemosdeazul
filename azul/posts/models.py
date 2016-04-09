@@ -7,6 +7,7 @@ from django.core.urlresolvers import reverse
 class Post(models.Model):
 	titulo=models.CharField(max_length=50)
 	slug=models.SlugField(max_length=50, blank=True,null=True)
+	resume=models.TextField(blank=True,null=True)
 	cuerpo=models.TextField()
 	fecha=models.DateTimeField(auto_now=True)
 	publicado=models.BooleanField(default=True)
