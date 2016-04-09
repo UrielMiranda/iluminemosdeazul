@@ -3,7 +3,9 @@
 {%load static%}
 
 {%block content%}
-	<h1>Todos los posts:</h1>
+     <div class="blog-header">
+     <h1 class="blog-title">Historias que iluminan</h1>
+	
 
 	{% for post in posts %}
 	<a href="{{post.get_absolute_url}}">
@@ -15,7 +17,83 @@
 		<p>{{post.cuerpo}}</p>
 		<img src="/media/img_post/Unknown.jpeg">
 	{%endfor%}
+    
+      </div>
 
+      <div class="row">
+
+        <div class="col-sm-8 blog-main">
+
+          <div class="blog-post">
+
+			<pre><code>
+          <div class="blog-post">
+            <h2 class="blog-post-title">EL MUNDO A TRAVÉS DE VERSOS</h2>
+            <p class="blog-post-meta">fecha by <a href="#">Alguien</a></p>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            </div><!-- /.blog-post -->
+			</code></pre>
+			<pre><code>
+          <div class="blog-post">
+            <h2 class="blog-post-title">EL MUNDO A TRAVÉS DE VERSOS</h2>
+            <p class="blog-post-meta">fecha by <a href="#">Alguien</a></p>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            
+          </div><!-- /.blog-post -->
+			</code></pre>
+			<pre><code>
+          <div class="blog-post">
+            <h2 class="blog-post-title">EL MUNDO A TRAVÉS DE VERSOS</h2>
+            <p class="blog-post-meta">fecha by <a href="#">Alguien</a></p>
+            <p>Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aenean lacinia bibendum nulla sed consectetur. Etiam porta sem malesuada magna mollis euismod. Fusce dapibus, tellus ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
+            
+          </div><!-- /.blog-post -->
+			</code></pre>
+		</div>
+		
+          <nav>
+            <ul class="pager">
+              <li><a href="#">Previous</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+          </nav>
+
+        </div><!-- /.blog-main -->
+
+        <div class="col-sm-3 col-sm-offset-1 blog-sidebar-module-inset">
+         <div class="sidebar-module-inset">
+        
+            <h4>2016</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">Marzo</a></li>
+              <li><a href="#">Febrero</a></li>
+              <li><a href="#">Enero</a></li>
+            </ol>
+          </div>
+          <div class="sidebar-module-inset">
+            <h4>2015</h4>
+            <ol class="list-unstyled">
+              <li><a href="#">Diciembre</a></li>
+              <li><a href="#">Noviembre</a></li>
+              <li><a href="#">Octubre</a></li>
+              <li><a href="#">Septiembre</a></li>
+              <li><a href="#">Agosto</a></li>
+              <li><a href="#">Julio</a></li>
+              <li><a href="#">Junio</a></li>
+              <li><a href="#">Mayo</a></li>
+              <li><a href="#">Abril</a></li>
+              <li><a href="#">Febrero</a></li>
+              <li><a href="#">Enero</a></li>
+            </ol>
+        </div>
+        
+
+          </div>
+        </div>
+
+      </div>
+
+    
 	
 
 {%endblock content%}
