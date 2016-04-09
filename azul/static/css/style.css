@@ -149,6 +149,18 @@ p{
 .no-padding{
   padding: 0px!important;
 }
+
+.fondea_cover{
+  width: 100%;
+}
+
+.fondea_back{
+  background-color: #3886B7;
+  color:white;
+}
+.Title{
+  text-align: center;
+}
 .contact-head h1{
   background-color: #005FB5;
   color:#fff;
@@ -179,6 +191,7 @@ p{
 .address{
   padding: 20px;
   vertical-align: middle;
+
 }
 .embed-responsive-item{
   margin-top: 25px; 
