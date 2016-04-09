@@ -28,7 +28,7 @@ urlpatterns = [
     url(r'^galeria', include('galery.urls')),
     url(r'^eventos', include('events.urls')),
     url(r'^posts/', include('posts.urls')),
-    url(r'^contacto', include('contacto.urls')),
+    url(r'^contacto', include('contacto.urls', namespace='contacto')),
     url(r'^instituciones', include('institutions.urls')),
 
     url(r'^$', TemplateView.as_view(template_name='home/home.html')),
