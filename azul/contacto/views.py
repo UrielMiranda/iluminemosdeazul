@@ -51,6 +51,11 @@ class Contacto(View):
 		if form.is_valid():
 			pass
 		#Aqui envia email
+		email = EmailMessage('Alguien quiere contactarnos', 'contenido template aqui',
+			'mail_contacto', ['iluminemosazul@gmail.com'], reply_to= ['madelin.pjm@aoutlook.com'],
+			headers={'Mensaje': 'foo'} )
+
+		email.send()
 		
 		return redirect('contacto:contactoapp')
 
