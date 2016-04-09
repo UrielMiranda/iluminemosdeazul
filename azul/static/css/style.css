@@ -7,10 +7,20 @@ header img{
   height: 132px;
   width: 100%;
 }
+img{
+  width: 100%;
+}
+
 
 /***********    ID's   ************/
 #one, #two, #carrusel{
   margin-bottom: 20px;
+}
+#gallery{
+  margin: 2em 0px 3em 0px;
+}
+#gallery > img{
+  width: 100%;
 }
 /***********  Clases ************/
 .footer{
@@ -56,7 +66,7 @@ header img{
   color: #fff!important;
 }
 .nav{
-  padding-left: 5% !important;
+  /*padding-left: 5% !important;*/
 }
 .navbar-default .navbar-nav > .active > a,
 .navbar-default .navbar-nav > .active > a:hover,
@@ -64,6 +74,9 @@ header img{
   background-color: #0080C6 !important;
   color: #fff !important;
   height: auto;
+}
+.container  nav{
+  border-radius: 20px;
 }
 .navbar-default .navbar-nav > li > a{
   color: #fff !important;
@@ -101,7 +114,7 @@ header img{
   height: auto;
 }
 .no-margin{
-  padding: 0px;
+  padding: 0;px
 }
 .card-title{
   text-align: center;
@@ -113,34 +126,17 @@ header img{
   text-align: center;
 }
 
+.navblue ul li > a[href="http://www.twitter.com"] {padding: 11px;}
+.navblue ul li > a[href="http://www.facebook.com"] {padding: 11px;}
+.navblue ul li > a[href="http://www.instagram.com/iluminemosdeazul/"] {padding: 11px;}
 
-
-/********
-* affiliate
-*********/
-#affiliates img{
-  max-width: 300px;
-}
-#affiliates a img{
-  text-align: center;
-}
-
-#affiliates p {
-  margin: 20px 0;
-}
-
-.title{
+.img-wrapper img{
   width: 100%;
-  background: #1b75bb;
+
 }
-
-.title h1,
-.title h2{
-  color: #fff;
-  padding: 10px;
+.no-padding{
+  padding: 0px!important;
 }
-
-
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) { ... }
@@ -149,6 +145,7 @@ header img{
 @media (min-width: @screen-md-min) { ... }
 iframe{
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: @screen-lg-min) { ... }s
