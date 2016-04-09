@@ -30,7 +30,6 @@ urlpatterns = [
     url(r'^posts/', include('posts.urls')),
     url(r'^contacto', include('contacto.urls', namespace='contacto')),
     url(r'^instituciones', include('institutions.urls')),
-
     url(r'^$', TemplateView.as_view(template_name='home/home.html')),
     url(r'^donaciones$', TemplateView.as_view(template_name='home/donations.html')),
     url(r'^a-que-nos-dedicamos', TemplateView.as_view(template_name='home/what-do-we-do.html')),
