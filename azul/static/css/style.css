@@ -16,12 +16,14 @@ img{
 #one, #two, #carrusel{
   margin-bottom: 20px;
 }
+
 #gallery{
   margin: 2em 0px 3em 0px;
 }
 #gallery > img{
   width: 100%;
 }
+
 /***********  Clases ************/
 .footer{
   backgorund:url(images/footer-01.sgv) center center no-repeat;
@@ -136,7 +138,9 @@ img{
 }
 .no-padding{
   padding: 0px!important;
+
 }
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) { ... }
