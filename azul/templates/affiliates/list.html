@@ -2,21 +2,95 @@
 {% block content %}
 
 
-    <h1>Instituciones</h1>
+    <section id="affiliates">
+        <div class="container">
 
-    {% for value in foundations %}
-        <p>{{ value.name }}</p>
-        <img src="{{ value.image.url }}" >
-    {% endfor %}
-
-
-    {% for value in contributors %}
-        <p>{{ value.name }}</p>
-    {% endfor %}
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
 
 
-     {% for value in vowels %}
-        <p>{{ value.name }}</p>
-    {% endfor %}
+                <div class="title">
+                    <h1 class="text-uppercase">Instituciones</h1>
+                </div>
+                 </div>
+             </div>
+
+             <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+
+
+                    <div class="title">
+                        <h2 class="text-uppercase">FUNDACIONES</h2>
+                    </div>
+
+                    <p>Sabemos que esta es una labor extraordinaria, que son muchos los que tienen amplia experiencia en modelos de atención y apoyo a las familias, que necesitan apoyo y que aún hay un largo camino por recorrer, por eso te invitamos a conocerlas o si quieres formar parte de ellas, a llenar el formulario que está abajo para hacernos llegar tu información:</p>
+
+
+
+                 {% for value in foundations %}
+                   <a href="{{ value.link }}" target="_blank">
+                      <img src="{{ value.image.url }}" class="pull-left" >
+                   </a>
+
+                {% endfor %}
+
+                </div>
+             </div>
+
+
+
+
+
+
+
+
+
+
+
+             <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+
+                    <div class="title">
+                        <h2 class="text-uppercase">COLABORADORES</h2>
+                     </div>
+                    <p>Y tan extraordinaria labor, sería imposible realizarla sin el apoyo de muchas empresas y emprendedores con los que hoy, somos afortunados de contar aliados que trabajan todos los días para apoyarnos a cumplir nuestra meta, por eso te los presentamos o si quieres formar parte de ellos, llena el formulario que está abajo y haznos llegar tu información:</p>
+
+                     {% for value in contributors %}
+                       <a href="{{ value.link }}" target="_blank">
+                          <img src="{{ value.image.url }}" class="pull-left" >
+                       </a>
+                    {% endfor %}
+
+                </div>
+             </div>
+
+
+
+
+
+
+
+
+             <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+
+                    <div class="title">
+                        <h2 class="text-uppercase">VOCALES</h2>
+                     </div>
+                     <p>Un mensaje extraordinario, necesita de gente extraordinaria para ser difundido, por esta razón te presentamos a quienes hasta hoy nos están ayudando a compartirlo a través de diferentes medios. Si quieres ser uno de ellos, llena el formulario debajo para formar parte de nuestros vocales:</p>
+
+                    <ul>
+                     {% for value in vowels %}
+                       <li><a href="{{ value.link }}" target="_blank">{{ value.name }}</a></li>
+                    {% endfor %}
+                    </ul>
+
+                </div>
+             </div>
+
+
+        </div>
+    </section>
+
 
 {% endblock %}

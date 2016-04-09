@@ -101,7 +101,7 @@ header img{
   height: auto;
 }
 .no-margin{
-  padding: 0;px
+  padding: 0px;
 }
 .card-title{
   text-align: center;
@@ -112,6 +112,35 @@ header img{
 .news h2, h1{
   text-align: center;
 }
+
+
+
+/********
+* affiliate
+*********/
+#affiliates img{
+  max-width: 300px;
+}
+#affiliates a img{
+  text-align: center;
+}
+
+#affiliates p {
+  margin: 20px 0;
+}
+
+.title{
+  width: 100%;
+  background: #1b75bb;
+}
+
+.title h1,
+.title h2{
+  color: #fff;
+  padding: 10px;
+}
+
+
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) { ... }
