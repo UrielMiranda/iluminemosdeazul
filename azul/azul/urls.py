@@ -18,7 +18,7 @@ from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
 from django.views.generic import TemplateView
-
+from home.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
@@ -30,8 +30,9 @@ urlpatterns = [
     url(r'^posts/', include('posts.urls')),
     url(r'^contacto', include('contacto.urls', namespace='contacto')),
     url(r'^instituciones', include('institutions.urls')),
-    url(r'^$', TemplateView.as_view(template_name='home/home.html')),
+    url(r'^$', HomeView.as_view(), name="home"),
     url(r'^donaciones$', TemplateView.as_view(template_name='home/donations.html')),
+    url(r'^conocenos$', TemplateView.as_view(template_name='home/conocenos.html')),
     url(r'^a-que-nos-dedicamos', TemplateView.as_view(template_name='home/what-do-we-do.html')),
 
 ]

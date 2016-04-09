@@ -43,22 +43,30 @@
       <div class="col-md-12 no-margin">
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="card ">
-            <img class="card-img-top center-block" src="../../media/images/capa-5.png" alt="Card image cap">
+              <a href="conocenos">
+                <img class="card-img-top center-block" src="../../media/images/capa-5.png" alt="Card image cap">
+              </a>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="card">
-            <img class="card-img-top center-block" src="../../media/images/capa-4.png" alt="Card image cap">
+               <a href="instituciones">
+                 <img class="card-img-top center-block" src="../../media/images/capa-4.png" alt="Card image cap">
+               </a>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="card">
-            <img class="card-img-top center-block" src="../../media/images/capa-3.png" alt="Card image cap">
+               <a href="posts/todos">
+                 <img class="card-img-top center-block" src="../../media/images/capa-3.png" alt="Card image cap">
+               </a>
           </div>
         </div>
         <div class="col-md-3 col-sm-6 col-xs-12">
           <div class="card">
-            <img class="card-img-top center-block" src="../../media/images/capa.png" alt="Card image cap">
+              <a href="donaciones">
+                     <img class="card-img-top center-block" src="../../media/images/capa.png" alt="Card image cap">
+               </a>
           </div>
         </div>
       </div>
@@ -69,9 +77,9 @@
         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
           <span class="head-news"><h1>Noticias Recientes</h1></span>
           <article class="news">
-            <h1>lorem now</h1>
-            <h2>12 de abril del 2012</h2>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Officiis, eaque. Praesentium consequuntur facere tempora, quam commodi natus at cum alias laborum eligendi perferendis laboriosam, inventore quo vero placeat accusamus, sed.</p>
+            <h1>{{ news.titulo }}</h1>
+            <h2>{{ date }}</h2>
+            <div class="last_news" style="max-height: 100px;overflow: hidden;">{% autoescape off %}{{ news.cuerpo }}{% endautoescape %}</div>
           </article>
         </div>
         <div class="col-md-6 col-lg-6 col-sm-6 col-xs-12">
