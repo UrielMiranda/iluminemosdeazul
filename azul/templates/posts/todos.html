@@ -2,36 +2,31 @@
 {%load static%}
 
 {%block content%}
-<div class="blog-header">
-	<h1 class="blog-title">Historias que iluminan</h1>
-</div>
-<div class="row">
-	<div class="col-sm-8 blog-main">
-	    <div class="blog-post">
-	 		{% for post in posts %}
-				<a href="{{post.get_absolute_url}}">
-		
-					<h2 class="blog-post-title">{{post.titulo}}</h2>
-				</a>
+<div class="container">
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1"> <div class="blog-header">
 
-				<p class="blog-post-meta">{{post.fecha}}</p>
+              <div class="col-md-8">
+        	     <h1 class="blog-title">Historias que iluminan</h1>
 
-				<p>{% autoescape off %} {{ post.resume}}{% endautoescape %}</p>
-			{%endfor%}
-		</div>
-        <nav>
-            <ul class="pager">
-              <li><a href="#">Previous</a></li>
-              <li><a href="#">Next</a></li>
-            </ul>
-        </nav>
+        	 		  {% for post in posts %}
+        				<a href="{{post.get_absolute_url}}">
+        		
+        					<h2 class="blog-post-title">{{post.titulo}}</h2>
+        				</a>
 
-    </div><!-- /.blog-main -->
+        				<p class="blog-post-meta">{{post.fecha}}</p>
 
-    <div class="col-sm-3 col-sm-offset-1 blog-sidebar-module-inset">
-    	<div class="sidebar-module-inset">
-       	    <h4>2016</h4>
-        	<ol class="list-unstyled">
+        				<p>{% autoescape off %} {{ post.resume}}{% endautoescape %}</p>
+        			{%endfor%}
+              </div>
+
+
+            
+    <div class="col-sm-3 col-sm-offset-1 col-md-2 blog-sidebar-module-inset">
+      <div class="sidebar-module-inset">
+            <h4>2016</h4>
+          <ol class="list-unstyled">
               <li><a href="#">Marzo</a></li>
               <li><a href="#">Febrero</a></li>
               <li><a href="#">Enero</a></li>
@@ -54,9 +49,22 @@
             </ol>
         </div>
     </div>
-</div>
 
-      </div>
+
+
+        		</div>
+          </div>
+        </div>        
+        <nav>
+            <ul class="pager">
+              <li><a href="#">Previous</a></li>
+              <li><a href="#">Next</a></li>
+            </ul>
+        </nav>
+
+</div><!-- /.blog-main -->
+
+
 
     
 	
