@@ -1,20 +1,9 @@
 from django.shortcuts import render, redirect
 from django.views.generic import View
 from .forms import ContactForm
-<<<<<<< HEAD
 from django.core.mail import EmailMessage
 # Create your views here.
 
-=======
-from django.core.mail import EmailMultiAlternatives
-from django.template.loader import get_template
-from django.template import Context
-
-# Create your views here.
-
-from django.core.mail import EmailMessage
-
->>>>>>> ac629cab34617b86d75969935ccca89fb8c5c131
 
 
 class Contacto(View):
@@ -46,8 +35,16 @@ class Contacto(View):
 		except:
 			print('Error')
 
-<<<<<<< HEAD
 
-=======
->>>>>>> ac629cab34617b86d75969935ccca89fb8c5c131
 		return redirect('contacto:contactoapp')
+
+
+
+
+
+
+
+
+
+
+
