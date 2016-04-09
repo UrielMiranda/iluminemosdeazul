@@ -140,7 +140,17 @@ header img{
   padding: 0px!important;
 
 }
+.fondea_cover{
+  width: 100%;
+}
 
+.fondea_back{
+  background-color: #3886B7;
+  color:white;
+}
+.Title{
+  text-align: center;
+}
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) { ... }
