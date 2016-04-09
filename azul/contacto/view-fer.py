@@ -14,7 +14,7 @@ from django.template import Context
 class Contacto(View):
 	def get(self,request):
 		form=ContactForm()
-		return render(request, 'contacto/contacto.html', 
+		return render(request, 'contacto/contacto.html',
 			{
 			'form': form,
 			})
@@ -38,11 +38,10 @@ class Contacto(View):
 		msg = EmailMultiAlternatives(subject, text_content, from_email, [to])
 		msg.attach_alternative(html_content, "text/html")
 		msg.send()
-		
+
 		return redirect('contacto:contactoapp')
 
 
 
 
 
-	
