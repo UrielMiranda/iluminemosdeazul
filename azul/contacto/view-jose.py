@@ -9,7 +9,7 @@ from django.core.mail import EmailMessage
 class Contacto(View):
 	def get(self,request):
 		form=ContactForm()
-		return render(request, 'contacto/contacto.html', 
+		return render(request, 'contacto/contacto.html',
 			{
 			'form': form,
 			})
@@ -24,8 +24,8 @@ class Contacto(View):
 		Hay alguien interesado en Iluminemos de Azul
 
 		Nombre: %s
-		Mail:  %s 
-		Mensaje: %s"""	% (nombre_contacto, mail_contacto, contenido) 
+		Mail:  %s
+		Mensaje: %s"""	% (nombre_contacto, mail_contacto, contenido)
 		email = EmailMessage('Alguien quiere contactarnos', content,
 			mail_contacto, ['iluminemosazul@gmail.com'], reply_to= [mail_contacto],
 			headers={'Mensaje': 'foo'} )
@@ -38,8 +38,6 @@ class Contacto(View):
 
 		return redirect('contacto:contactoapp')
 
-		
-	
 
 
 
@@ -48,4 +46,5 @@ class Contacto(View):
 
 
 
-	
+
+
