@@ -35,7 +35,8 @@ p{
 }
 /***********  Clases ************/
 .footer{
-  backgorund:url(images/footer-01.sgv) center center no-repeat;
+  background:url(/media/images/background-01.png) center center no-repeat fixed;
+  background-size: cover;
   height: 25%;
   width: 100%;
   background-color: #0079CF;
@@ -136,8 +137,10 @@ p{
 .news h2, h1{
   text-align: center;
 }
-
-.navblue ul li > a[href="https://twitter.com/iluminemosazul"] {padding: 11px;}
+a:hover{
+  background-color: #0080C6;
+}
+.navblue ul li > a[href="https://twitter.com/iluminemosazul"] {padding: 11px; }
 .navblue ul li > a[href="https://www.facebook.com/Iluminemos-de-Azul-508076069333379/"] {padding: 11px;}
 .navblue ul li > a[href="http://www.instagram.com/iluminemosdeazul/"] {padding: 11px;}
 .navblue ul li > a[href="mailto:contacto@iluminemosdeazul.org?subject=feedback"]{padding: 11px;}
@@ -194,7 +197,7 @@ p{
 
 }
 .embed-responsive-item{
-  margin-top: 25px; 
+  margin-top: 25px;
 }
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) { }
