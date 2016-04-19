@@ -17,6 +17,10 @@ p{
   color:#666;
   font-size: 1.2em;
 }
+h2{
+  text-align:center;
+  
+}
 
 /***********    ID's   ************/
 #one, #two, #carrusel{
@@ -137,9 +141,7 @@ p{
 .news h2, h1{
   text-align: center;
 }
-a:hover{
-  background-color: #0080C6;
-}
+
 .navblue ul li > a[href="https://twitter.com/iluminemosazul"] {padding: 11px; }
 .navblue ul li > a[href="https://www.facebook.com/Iluminemos-de-Azul-508076069333379/"] {padding: 11px;}
 .navblue ul li > a[href="http://www.instagram.com/iluminemosdeazul/"] {padding: 11px;}
@@ -157,13 +159,6 @@ a:hover{
   width: 100%;
 }
 
-.fondea_back{
-  background-color: #3886B7;
-  color:white;
-}
-.Title{
-  text-align: center;
-}
 .contact-head h1{
   background-color: #005FB5;
   color:#fff;
@@ -199,6 +194,7 @@ a:hover{
 .embed-responsive-item{
   margin-top: 25px;
 }
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) { }
 

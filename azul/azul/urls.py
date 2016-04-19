@@ -16,14 +16,13 @@ Including another URLconf
 from django.conf.urls import url, include, patterns
 from django.contrib import admin
 from django.conf import settings
-from django.conf.urls.static import static
+# from django.conf.urls.static import static
 from django.views.generic import TemplateView
 from home.views import *
 
+
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-
-
     url(r'^directorio', include('azuldirectorio.urls')),
     url(r'^galeria', include('galery.urls')),
     url(r'^eventos', include('events.urls')),
@@ -36,4 +35,6 @@ urlpatterns = [
     url(r'^a-que-nos-dedicamos', TemplateView.as_view(template_name='home/what-do-we-do.html')),
 
 ]
-urlpatterns += patterns('', (r'^media/(?P<path>.*)$', 'django.views.static.serve', { 'document_root': settings.MEDIA_ROOT}))
+if settings.DEBUG:
+    urlpatterns += patterns('',
+     (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}))
