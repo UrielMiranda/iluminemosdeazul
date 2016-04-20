@@ -37,17 +37,12 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
-    #apps
     'azuldirectorio',
     'galery',
     'events',
     'posts',
     'azul_app',
     'institutions',
-
-    # third apps
-    #'eventbrite',
 
 ]
 
@@ -133,17 +128,17 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
 STATICFILES_DIRS = (
     os.path.join(BASE_DIR, "static"),
+    '/var/www/static/',
 )
 
 STATIC_URL = '/static/'
-STATIC_ROOT = "/var/www/nekro76.pythonanywhere.com//static/"
+STATIC_ROOT = "/var/www/nekro76.pythonanywhere.com/static/"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = '/media/'
 
 
-
-EMAIL_PORT='587'
+EMAIL_PORT = '587'
 EMAIL_HOST_USER = 'iluminemosazul@gmail.com'
 EMAIL_HOST_PASSWORD = 'blueteam'
 EMAIL_USE_TLS = True

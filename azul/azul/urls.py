@@ -16,7 +16,7 @@ Including another URLconf
 from django.conf.urls import url, include, patterns
 from django.contrib import admin
 from django.conf import settings
-# from django.conf.urls.static import static
+from django.conf.urls.static import static
 from django.views.generic import TemplateView
 from home.views import *
 
@@ -34,7 +34,7 @@ urlpatterns = [
     url(r'^conocenos$', TemplateView.as_view(template_name='home/conocenos.html')),
     url(r'^a-que-nos-dedicamos', TemplateView.as_view(template_name='home/what-do-we-do.html')),
 
-]
+] + static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
 if settings.DEBUG:
     urlpatterns += patterns('',
      (r'^media/(?P<path>.*)$', 'django.views.static.serve', {'document_root': settings.MEDIA_ROOT}))
