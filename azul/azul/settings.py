@@ -132,7 +132,7 @@ STATICFILES_DIRS = (
 )
 
 STATIC_URL = '/static/'
-STATIC_ROOT = "/var/www/nekro76.pythonanywhere.com/static/"
+STATIC_ROOT = "/var/www/static/"
 
 MEDIA_ROOT = os.path.join(BASE_DIR, "media")
 MEDIA_URL = '/media/'
